@@ -23,7 +23,7 @@
 
 use serde::{Serialize, Deserialize};
 
-#[derive(Debug, PartialEq, Serizalize, Deserealize)]
+#[derive(Debug, PartialEq, Serialize, Deserialize)]
 pub struct BitLongVec {
     /// Capacity of array.
     pub capacity: usize,
