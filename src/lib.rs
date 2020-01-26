@@ -21,7 +21,7 @@
 //! }
 //! ```
 
-use serde::{Serizalize, Deserealize};
+use serde::{Serialize, Deserialize};
 
 #[derive(Debug, PartialEq, Serizalize, Deserealize)]
 pub struct BitLongVec {
