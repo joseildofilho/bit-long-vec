@@ -20,7 +20,10 @@
 //!     assert_eq!(vec.get(index), 1023);
 //! }
 //! ```
-#[derive(Debug, PartialEq)]
+
+use serde::{Serizalize, Deserealize};
+
+#[derive(Debug, PartialEq, Serizalize, Deserealize)]
 pub struct BitLongVec {
     /// Capacity of array.
     pub capacity: usize,
